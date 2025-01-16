@@ -60,3 +60,10 @@ n_rectangles = Sum(delta_x * fx_i, (i, 1, n)).doit()
 area = limit(n_rectangles, n, oo)
 
 print(area)
+
+
+# Here we determine the length of each rectangle delta_x and the start of each rectangle
+# x_i where i is the index of each rectangle. fx_i is the height of each rectangle at
+# index i. We declare n number of rectangles and sum their areas delta_x * fx_i, but
+# we have no area value yet because we have not committed a number for n. Instead we
+# approach n toward infinity to see what area we converge on, and you should get 4/3!
