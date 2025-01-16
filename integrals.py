@@ -67,3 +67,18 @@ print(area)
 # index i. We declare n number of rectangles and sum their areas delta_x * fx_i, but
 # we have no area value yet because we have not committed a number for n. Instead we
 # approach n toward infinity to see what area we converge on, and you should get 4/3!
+
+
+
+# For the function f(x) = 3x**2 + 1 what is the area under the curve for x between 0 and 2?
+
+# Declare 'x' to SymPy
+x = symbols('x')
+
+# Now just use Python syntax to declare function
+f = 3*x**2 + 1
+
+# Calculate the integral of the function with respect to x
+# for the area between x = 0 and 2
+area = integrate(f, (x, 0, 2))
+print(area) # prints 10
