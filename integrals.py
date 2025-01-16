@@ -81,4 +81,5 @@ f = 3*x**2 + 1
 # Calculate the integral of the function with respect to x
 # for the area between x = 0 and 2
 area = integrate(f, (x, 0, 2))
-print(area) # prints 10
+
+print(area) 
